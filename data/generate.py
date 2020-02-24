@@ -20,6 +20,11 @@ from faker import Faker
 import babel
 from babel.dates import format_date
 
+from faker.factory import Factory
+Faker = Factory.create
+fake = Faker()
+fake.seed(0)
+
 fake = Faker()
 fake.seed(230517)
 random.seed(230517)
